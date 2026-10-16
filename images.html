@@ -1,1 +1,127 @@
+<!-- Traditional Handmade Bag Product Card -->
+<div class="product-card">
+  <div class="product-image">
+    <div class="image-placeholder">
+      👜
+      <p>Traditional Handmade Bag</p>
+      <small>  </small>
+    </div>
+  </div>
 
+  <div class="product-details">
+    <span class="stock">● स्टॉक उपलब्ध है</span>
+
+    <h2>Traditional Handmade Bag</h2>
+
+    <p class="price">
+      ₹349
+      <span class="mrp">₹589</span>
+      <span class="discount">41% OFF</span>
+    </p>
+
+    <p class="description">
+      Traditional handmade bag. सुंदर डिजाइन और
+      रोजमर्रा के इस्तेमाल के लिए उपयुक्त।
+    </p>
+
+    <button class="buy-button" onclick="buyProduct()">
+      Buy Now
+    </button>
+  </div>
+</div>
+
+<style>
+.product-card {
+  max-width: 360px;
+  margin: 20px auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 4px 14px #00000010;
+}
+
+.product-image {
+  background: #f7f4ef;
+  min-height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  text-align: center;
+  padding: 20px;
+  color: #76543a;
+}
+
+.image-placeholder > :first-child {
+  font-size: 64px;
+}
+
+.product-details {
+  padding: 18px;
+}
+
+.stock {
+  color: #168044;
+  font-size: 13px;
+}
+
+.product-details h2 {
+  font-size: 21px;
+  margin: 12px 0;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #18794e;
+}
+
+.mrp {
+  font-size: 15px;
+  color: #777;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.discount {
+  font-size: 12px;
+  color: #b42318;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.buy-button {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 8px;
+  background: #16794b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background: #105f39;
+}
+</style>
+
+<script>
+function buyProduct() {
+  alert(
+    "Traditional Handmade Bag\n" +
+    "Price: ₹349\n\n" +
+    "Payment gateway connect karne ke baad " +
+    "yahan checkout shuru hoga."
+  );
+}
+</script>
